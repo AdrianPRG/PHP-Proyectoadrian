@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: rgb(241, 239, 243);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-image: url("imagenes/header.jpeg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  color: aliceblue;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  transition: 5s;
+}
+
+
+header:hover {
+  color: #ffffa0;
+  background-image: url("../css/imagenes/tierra.jpg");
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    flex-grow: 1;
+}
+
+.divimagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 5;
+    background-image: url("/css/imagenes/fondoregistro.png")
+}
+
+.divregister{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 241);
+    flex-grow: 1;
+}

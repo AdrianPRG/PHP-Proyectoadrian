@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 249);
+  width: 100%;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-image: url("imagenes/header.jpeg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  color: aliceblue;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  transition: 5s;
+}
+
+header:hover {
+  color: #ffffa0;
+  background-image: url("../css/imagenes/tierra.jpg");
+}
+
+main {
+  flex-grow: 1; /* Esto asegura que main ocupe el espacio restante */
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: row;
+}
+
+.divMain1 {
+  animation: colorchange 20s infinite alternate;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
+  width: 300px;
+  flex-grow: 1;
+  padding-top: 20px;
+
+}
+
+.divMain2 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 9;
+  background-image: url("/css/imagenes/fondologin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divregister{
+  width: 500px;
+  height: 500px;
+}
+
+.seccionForm {
+  justify-content: center;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+small {
+  color: black;
+}
+
+@keyframes colorchange {
+  0% {
+    background: #ded7d7;
+  }
+  14% {
+    background: #dce4e6;
+  }
+  28% {
+    background: #bec4c7;
+  }
+  42% {
+    background: #d6d2ef;
+  }
+  56% {
+    background: #a8a8b9;
+  }
+  70% {
+    background: #ddd5e3;
+  }
+  84% {
+    background: #ded4de;
+  }
+  100% {
+    background: #e1d9d9;
+  }
+}
