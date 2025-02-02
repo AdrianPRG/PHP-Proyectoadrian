@@ -221,9 +221,9 @@ class Model{
         $stmt->bindValue(':valor', $valor,$tipo);
 
 
-        $stmt->execute();
+        $resultado = $stmt->execute();
     
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if($resultado) return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         echo "Error al obtener las tripulaciones con subconsulta: " . $e->getMessage();
         return false;

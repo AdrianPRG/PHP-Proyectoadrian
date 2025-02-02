@@ -29,7 +29,9 @@ class ExpedicionController{
 
         $expedicionUnica = $expedicion->cargar($datos['id']);
         $resultadosTablaRelacionada = $expedicion->obtenerDatosRelacionados("Tripulacion", "Expedicion", "idTripulacion", "Tripulacion_idTripulacion",$expedicionUnica["Tripulacion_idTripulacion"]);
-                
+        
+        ($resultadosTablaRelacionada == null) ? $resultadosTablaRelacionada = [] : $resultadosTablaRelacionada;
+
         $datos2 = compact("resultadosTablaRelacionada");
         $resultado = compact("expedicionUnica");
 
